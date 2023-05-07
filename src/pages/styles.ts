@@ -3,12 +3,17 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 500px;
   height: 600px;
-  background-color: #474242;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 20px;
+
+  @media (max-width: 400px) {
+    width: 350px;
+    height: 550px;
+  }
 `;
 
 export const ProfileBox = styled.div`
@@ -16,7 +21,7 @@ export const ProfileBox = styled.div`
   height: 10%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid grey;
 
   div {
     display: flex;
@@ -30,6 +35,11 @@ export const ProfilePhoto = styled.img`
   height: 40px;
   border-radius: 50%;
   margin: 0px 10px;
+
+  @media (max-width: 400px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const Name = styled.p`
@@ -62,7 +72,7 @@ export const Question = styled.div`
   P {
     width: auto;
     font-size: 15px;
-    background-color: #65ccef;
+    background-color: #4988f5;
     padding: 10px;
     margin: 0px 10px;
     border-radius: 10px;
@@ -78,7 +88,7 @@ export const Response = styled.div`
   P {
     width: auto;
     font-size: 15px;
-    background-color: #2a2e3f;
+    background-color: #dedede;
     padding: 10px;
     border-radius: 10px;
     margin: 10px 10px;
@@ -102,8 +112,18 @@ export const Input = styled.input`
   border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #2a2e3f;
+  background-color: grey;
   color: white;
+
+  ::placeholder {
+    color: white;
+  }
+
+  @media (max-width: 400px) {
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -112,4 +132,11 @@ export const Button = styled.button`
   border-radius: 10px;
   border: none;
   background-color: #65ccef;
+  color: white;
+
+  @media (max-width: 400px) {
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+  }
 `;
