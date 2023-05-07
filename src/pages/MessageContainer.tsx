@@ -46,6 +46,7 @@ const Chatting = () => {
     ]);
     setMessage("");
     setTyping(false);
+    chatGptResponse;
   };
 
   return (
